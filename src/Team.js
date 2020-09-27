@@ -61,7 +61,7 @@ class Team extends React.Component {
                                     <img src={DeepIcon} alt="Deep Shah" class="team-image" />
                                     <div class="middle">
                                         <div class="team-links">
-                                            <a href="mailto:deep.shah.19@ucl.ac.uk" target="_new" class="white-text" title="Email Deep">
+                                            <a href="mailto:president@ucltechsoc.com" target="_new" class="white-text" title="Email Deep">
                                                 <i class="fa fa-envelope" />
                                             </a>
                                             <a href="https://github.com/deeps-github" target="_new" class="white-text" title="Deep's Github">
@@ -87,7 +87,7 @@ class Team extends React.Component {
                                     <img src={AliIcon} alt="Ali Syed" class="team-image" />
                                     <div class="middle">
                                         <div class="team-links">
-                                            <a href="mailto:mohammad.syed.19@ucl.ac.uk" target="_new" class="white-text" title="Email Ali">
+                                            <a href="mailto:treasurer@ucltechsoc.com" target="_new" class="white-text" title="Email Ali">
                                                 <i class="fa fa-envelope" />
                                             </a>
                                             <a href="https://github.com/malisyed" target="_new" class="white-text" title="Ali's Github">
@@ -115,7 +115,7 @@ class Team extends React.Component {
                                     <img src={JasnoorIcon} alt="Jasnoor Kaur" class="team-image" />
                                     <div class="middle">
                                         <div class="team-links">
-                                            <a href="mailto:jasnoor.kaur.19@ucl.ac.uk" target="_new" class="white-text" title="Email Jasnoor">
+                                            <a href="mailto:vp@ucltechsoc.com" target="_new" class="white-text" title="Email Jasnoor">
                                                 <i class="fa fa-envelope" />
                                             </a>
                                             <a href="https://github.com/jasnoor7" target="_new" class="white-text" title="Jasnoor's Github">
@@ -142,7 +142,7 @@ class Team extends React.Component {
                                     <img src={AbhiramIcon} alt="Abhiram Sasitharan" class="team-image" />
                                     <div class="middle">
                                         <div class="team-links">
-                                            <a href="mailto:abhiram.sasitharan.19@ucl.ac.uk" target="_new" class="white-text" title="Email Abhiram">
+                                            <a href="mailto:events@ucltechsoc.com" target="_new" class="white-text" title="Email Abhiram">
                                                 <i class="fa fa-envelope" />
                                             </a>
                                             <a href="https://github.com/Abhiram1999" target="_new" class="white-text" title="Abhiram's Github">
@@ -169,7 +169,7 @@ class Team extends React.Component {
                                     <img src={GurneekIcon} alt="Gurneek Gill" class="team-image" />
                                     <div class="middle">
                                         <div class="team-links">
-                                            <a href="mailto:gurneek.gill.18@ucl.ac.uk" target="_new" class="white-text" title="Email Gurneek">
+                                            <a href="mailto:sponsorship@ucltechsoc.com" target="_new" class="white-text" title="Email Gurneek">
                                                 <i class="fa fa-envelope" />
                                             </a>
                                             <a href="https://github.com/" target="_new" class="white-text" title="Gurneek's Github">
@@ -195,7 +195,7 @@ class Team extends React.Component {
                                     <img src={AnushaIcon} alt="Anusha Patel" class="team-image" />
                                     <div class="middle">
                                         <div class="team-links">
-                                            <a href="mailto:anusha.patel.19@ucl.ac.uk" target="_new" class="white-text" title="Email Anusha">
+                                            <a href="mailto:marketing@ucltechsoc.com" target="_new" class="white-text" title="Email Anusha">
                                                 <i class="fa fa-envelope" />
                                             </a>
                                             <a href="https://github.com/anupatel99" target="_new" class="white-text" title="Anusha's Github">
@@ -230,7 +230,7 @@ class Team extends React.Component {
                                             <a href="http://www.linkedin.com/in/arshia-fazeli-071274172" target="_new" class="white-text" title="Arshia's LinkedIn">
                                                 <i class="fa fa-linkedin" />
                                             </a>
-                                            <a href="https://www.facebook.com/arshiiyya" target="_new" class="white-text" title="Arshia's Facebook">
+                                            <a href="mailto:welfare@ucltechsoc.com" target="_new" class="white-text" title="Arshia's Facebook">
                                                 <i class="fa fa-facebook-official" />
                                             </a>
                                         </div>
