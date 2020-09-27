@@ -235,7 +235,7 @@ class App extends Component {
 
           </div>
 
-          <div class="footer-copyright text-center py-3">© 2018 Copyright:
+          <div class="footer-copyright text-center py-3">© 2020 Copyright:
           <a href=""> UCL TechSoc</a>
           </div>
         </footer>
