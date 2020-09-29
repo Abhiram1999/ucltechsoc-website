@@ -206,7 +206,7 @@ class App extends Component {
             <EventTabs/>
             </div>
             <p class="text-center w-responsive mx-auto my-5"><i>Interested in Organizing an Event with us? Drop an email to &nbsp;
-              <a class="one" href="mailto:sponsorship@ucltechsoc.com"><fa class="fa fa-envelope"/> events@ucltechsoc.com</a></i>
+              <a class="one" href="mailto:events@ucltechsoc.com"><fa class="fa fa-envelope"/> events@ucltechsoc.com</a></i>
               </p>
           </section>
 

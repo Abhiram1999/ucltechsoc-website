@@ -15,7 +15,7 @@ export default class ContactUs extends React.Component {
         return (
             <div class="mx-3">
                 
-                <a href="mailto:help@ucltechsoc.com" class="icon-button email my-2" title= "Email Us">
+                <a href="mailto:president@ucltechsoc.com" class="icon-button email my-2" title= "Email Us">
                     <i class="fa fa-envelope icon-email"></i><span/>
                 </a>
 
