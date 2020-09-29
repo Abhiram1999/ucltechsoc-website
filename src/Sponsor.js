@@ -9,10 +9,11 @@ export class RenderSponsors extends React.Component {
     state = {
         sponsors: [],
         fetched: false,
-        goldExists: false,
-        silverExists: false,
-        bronzeExists: false,
-        partnerExists: false,
+        sponsorExists: false,
+        // goldExists: false,
+        // silverExists: false,
+        // bronzeExists: false,
+        // partnerExists: false,
     }
 
     getSponsorsList() {
@@ -28,88 +29,110 @@ export class RenderSponsors extends React.Component {
     }
 
     render(){
-        var goldSponsors, silverSponsors, bronzeSponsors, partners;
+        // var goldSponsors, silverSponsors, bronzeSponsors, partners;
+        var allSponsors;
         if(this.state.fetched){
-            goldSponsors = this.state.sponsors.map((e) => {
-                if(e.sponsor.tier === "Gold"){
-                    if(!this.state.goldExists){
-                    this.setState({goldExists:true});
+
+             allSponsors = this.state.sponsors.map((e) => {
+                if(e.sponsor.tier === "Gold" || e.sponsor.tier === "Silver" || e.sponsor.tier === "Bronze" || e.sponsor.tier === "Partners"){
+                    if(!this.state.sponsorExists){
+                    this.setState({sponsorExists:true});
                     }
                 return(
                     <div class="container1 col-lg-4 col-md-6 col-sm-12" title={e.sponsor.name} style={{padding: 20}}>
-                        <img src={e.sponsor.img_url} alt={e.sponsor.name} class="image" />
+                        <img src={e.sponsor.img_url} alt={e.sponsor.name} class="image center-block" />
                     </div>);
                 }
             });
 
-            if(!this.state.goldExists){
-                goldSponsors = (
-                    <div style={{padding: 20}}>
-                        Interested in being a Gold Sponsor? Contact us now!
-                    </div>
-                )
-            }
+            // if(!this.state.sponsorExists){
+            //     allSponsors = (
+            //         <div style={{padding: 20}}>
+            //             Interested in being a Gold Sponsor? Contact us now!
+            //         </div>
+            //     )
+            // }
 
-            silverSponsors = this.state.sponsors.map((e) => {
-                if(e.sponsor.tier === "Silver"){
-                    if(!this.state.silverExists){
-                    this.setState({silverExists:true});
-                    }
-                return(
-                    <div class="container1 col-lg-3 col-md-4 col-sm-6" title={e.sponsor.name} style={{padding: 20}}>
-                        <img src={e.sponsor.img_url} alt={e.sponsor.name} class="image" />
-                    </div>);
-                }
-            });
+            // goldSponsors = this.state.sponsors.map((e) => {
+            //     if(e.sponsor.tier === "Gold"){
+            //         if(!this.state.goldExists){
+            //         this.setState({goldExists:true});
+            //         }
+            //     return(
+            //         <div class="container1 col-lg-4 col-md-6 col-sm-12" title={e.sponsor.name} style={{padding: 20}}>
+            //             <img src={e.sponsor.img_url} alt={e.sponsor.name} class="image" />
+            //         </div>);
+            //     }
+            // });
 
-            if(!this.state.silverExists){
-                silverSponsors =  (
-                    <div style={{padding: 20}}>
-                        Interested in being a Silver Sponsor? Contact us now!
-                    </div>
-                )
-            } 
+            // if(!this.state.goldExists){
+            //     goldSponsors = (
+            //         <div style={{padding: 20}}>
+            //             Interested in being a Gold Sponsor? Contact us now!
+            //         </div>
+            //     )
+            // }
 
-            bronzeSponsors = this.state.sponsors.map((e) => {
-                if(e.sponsor.tier === "Bronze"){
-                    if(!this.state.bronzeExists){
-                    this.setState({bronzeExists:true});
-                    }
-                    return(
-                    <div class="container1 col-lg-3 col-md-4 col-sm-6" title={e.sponsor.name} style={{padding: 20}}>
-                        <img src={e.sponsor.img_url} alt={e.sponsor.name} class="image" />
-                    </div>);
-                } 
+            // silverSponsors = this.state.sponsors.map((e) => {
+            //     if(e.sponsor.tier === "Silver"){
+            //         if(!this.state.silverExists){
+            //         this.setState({silverExists:true});
+            //         }
+            //     return(
+            //         <div class="container1 col-lg-3 col-md-4 col-sm-6" title={e.sponsor.name} style={{padding: 20}}>
+            //             <img src={e.sponsor.img_url} alt={e.sponsor.name} class="image" />
+            //         </div>);
+            //     }
+            // });
+
+            // if(!this.state.silverExists){
+            //     silverSponsors =  (
+            //         <div style={{padding: 20}}>
+            //             Interested in being a Silver Sponsor? Contact us now!
+            //         </div>
+            //     )
+            // } 
+
+            // bronzeSponsors = this.state.sponsors.map((e) => {
+            //     if(e.sponsor.tier === "Bronze"){
+            //         if(!this.state.bronzeExists){
+            //         this.setState({bronzeExists:true});
+            //         }
+            //         return(
+            //         <div class="container1 col-lg-3 col-md-4 col-sm-6" title={e.sponsor.name} style={{padding: 20}}>
+            //             <img src={e.sponsor.img_url} alt={e.sponsor.name} class="image" />
+            //         </div>);
+            //     } 
                 
-            });
+            // });
 
-            if(!this.state.bronzeExists){
-                bronzeSponsors = (
-                    <div style={{padding: 20}}>
-                        Interested in being a Bronze Sponsor? Contact us now!
-                    </div>
-                )
-            }
+            // if(!this.state.bronzeExists){
+            //     bronzeSponsors = (
+            //         <div style={{padding: 20}}>
+            //             Interested in being a Bronze Sponsor? Contact us now!
+            //         </div>
+            //     )
+            // }
 
-            partners = this.state.sponsors.map((e) => {
-                if(e.sponsor.tier === "Partners") {
-                    if(!this.state.partnerExists){
-                    this.setState({partnerExists:true});
-                    }
-                return(
-                    <div class="container1 col-lg-2 col-md-3 col-sm-4" title={e.sponsor.name} style={{padding: 20}}>
-                        <img src={e.sponsor.img_url} alt={e.sponsor.name} class="image" />
-                    </div>);
-                }
-            });
+            // partners = this.state.sponsors.map((e) => {
+            //     if(e.sponsor.tier === "Partners") {
+            //         if(!this.state.partnerExists){
+            //         this.setState({partnerExists:true});
+            //         }
+            //     return(
+            //         <div class="container1 col-lg-2 col-md-3 col-sm-4" title={e.sponsor.name} style={{padding: 20}}>
+            //             <img src={e.sponsor.img_url} alt={e.sponsor.name} class="image" />
+            //         </div>);
+            //     }
+            // });
 
-            if(!this.state.partnerExists){
-                partners = (
-                    <div style={{padding: 20}}>
-                        Interested in being a Partner? Contact us now!
-                    </div>
-                )
-            }
+            // if(!this.state.partnerExists){
+            //     partners = (
+            //         <div style={{padding: 20}}>
+            //             Interested in being a Partner? Contact us now!
+            //         </div>
+            //     )
+            // }
 
         }
 
@@ -117,7 +140,14 @@ export class RenderSponsors extends React.Component {
             <div>
                 { this.state.fetched &&
                 <div>
-                    {this.state.goldExists && 
+                     <div>
+                    <div class="container">
+                    <div class="row justify-content-center">
+                    {allSponsors}
+                    </div>
+                    </div> 
+                    </div>
+                    {/* {this.state.goldExists && 
                     <div>
                     <div class="sponsor-title-light gold">Gold Sponsors</div>
                     <div class="container">
@@ -156,14 +186,15 @@ export class RenderSponsors extends React.Component {
                     </div>
                     </div>
                     </div>
-                    }
-                    { !(this.state.goldExists && this.state.silverExists && this.state.bronzeExists && this.state.partnerExists) &&
+                    } */}
+                    {/* { !(this.state.goldExists && this.state.silverExists && this.state.bronzeExists && this.state.partnerExists) && */}
                     <div>
+                        <div class="container"><h3><br></br></h3></div>
                         <div class="container" style={{color:"rgba(51, 15, 83)", fontWeight: 800}}>
                         <h3> We're currently looking for more Sponsors!</h3>
                         </div>
                     </div>
-                     }
+                     {/* } */}
                 </div>
             }
             { !this.state.fetched &&
