@@ -40,7 +40,9 @@ export class RenderSponsors extends React.Component {
                     }
                 return(
                     <div class="container1 col-lg-4 col-md-6 col-sm-12" title={e.sponsor.name} style={{padding: 20}}>
-                        <img src={e.sponsor.img_url} alt={e.sponsor.name} class="image center-block" />
+                        <a href={e.sponsor.home_url}>
+                            <img src={e.sponsor.img_url} alt={e.sponsor.name} class="image center-block d-block mx-auto"/>
+                        </a>
                     </div>);
                 }
             });
@@ -188,12 +190,12 @@ export class RenderSponsors extends React.Component {
                     </div>
                     } */}
                     {/* { !(this.state.goldExists && this.state.silverExists && this.state.bronzeExists && this.state.partnerExists) && */}
-                    <div>
+                    {/* <div>
                         <div class="container"><h3><br></br></h3></div>
                         <div class="container" style={{color:"rgba(51, 15, 83)", fontWeight: 800}}>
                         <h3> We're currently looking for more Sponsors!</h3>
                         </div>
-                    </div>
+                    </div> */}
                      {/* } */}
                 </div>
             }

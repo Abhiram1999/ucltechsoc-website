@@ -190,6 +190,7 @@ class App extends Component {
             <h2 class="h1-responsive font-weight-bold text-center my-3">Our Sponsors</h2>
             <p class="text-center w-responsive mx-auto mb-5">TechSoc would not be as good as it is if it wasn't for our amazing sponsors, and we're deeply greatful for all their support.</p>
             <Sponsor />
+            <p class="text-center w-responsive mx-auto my-5"><h3>We're currently looking for more Sponsors!</h3></p>
             <p class="text-center w-responsive mx-auto my-5"><i>Interested in Sponsoring us? Drop an email to &nbsp;
               <a class="one" href="mailto:sponsorship@ucltechsoc.com"><fa class="fa fa-envelope"/> sponsorship@ucltechsoc.com</a></i>
             </p>
