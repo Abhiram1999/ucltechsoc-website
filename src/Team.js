@@ -221,7 +221,7 @@ class Team extends React.Component {
                                     <img src={ArshiaIcon} alt="Arshia Fazeli" class="team-image" />
                                     <div class="middle">
                                         <div class="team-links">
-                                            <a href="mailto:arshia.fazeli.18@ucl.ac.uk" target="_new" class="white-text" title="Email Arshia">
+                                            <a href="mailto:welfare@ucltechsoc.com" target="_new" class="white-text" title="Email Arshia">
                                                 <i class="fa fa-envelope" />
                                             </a>
                                             <a href="https://github.com/arshiiyyaaa" target="_new" class="white-text" title="Arshia's Github">
@@ -230,7 +230,7 @@ class Team extends React.Component {
                                             <a href="http://www.linkedin.com/in/arshia-fazeli-071274172" target="_new" class="white-text" title="Arshia's LinkedIn">
                                                 <i class="fa fa-linkedin" />
                                             </a>
-                                            <a href="mailto:welfare@ucltechsoc.com" target="_new" class="white-text" title="Arshia's Facebook">
+                                            <a href="https://www.facebook.com/arshiiyya" target="_new" class="white-text" title="Arshia's Facebook">
                                                 <i class="fa fa-facebook-official" />
                                             </a>
                                         </div>

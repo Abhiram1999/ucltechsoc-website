@@ -178,7 +178,7 @@ class App extends Component {
             <InfoCards />
 
             <p class="text-justify w-responsive mx-auto my-5">
-              Looking forward to 2018/2019, we intend to build on our achievements by expanding the scope and
+              Looking forward to 2020/2021, we intend to build on our achievements by expanding the scope and
               sophistication of our activities, running more high-profile events and establishing special initiatives
               for key branches of technology.
             </p>
