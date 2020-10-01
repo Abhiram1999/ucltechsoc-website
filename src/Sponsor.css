@@ -9,14 +9,14 @@
   }
   
   .image {
-    width: 70%;
-    margin: 2% 0 0 15%;
+    width: 75%;
+    margin: 0% 0 0 0%;
     position: relative;
     top: 50%;
     display:block;
-  -webkit-transform: translateY(-50%);
+  /* -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  transform: translateY(-50%); */
   }
 
   .sponsor-title-light {
